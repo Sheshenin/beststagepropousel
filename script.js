@@ -184,9 +184,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, { threshold: 0.5 });
 
-    const slide9 = document.getElementById('slide9');
-    if (slide9) {
-        counterObserver.observe(slide9);
+    const slide10 = document.getElementById('slide10');
+    if (slide10) {
+        counterObserver.observe(slide10);
     }
 
     function animateCounters(slide) {

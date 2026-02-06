@@ -1162,7 +1162,247 @@ body {
     color: var(--accent-green);
 }
 
-/* ===== SLIDE 9: Offer ===== */
+/* ===== SLIDE 9: Proof / Comparison ===== */
+.slide-tag--purple {
+    background: rgba(167, 139, 250, 0.12);
+    color: var(--accent-purple);
+    border-color: rgba(167, 139, 250, 0.25);
+}
+
+.highlight-purple {
+    background: linear-gradient(135deg, var(--accent-purple), #c4b5fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.comparison-table {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: 28px;
+}
+
+.comp-header {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+    gap: 1px;
+    background: rgba(255,255,255,0.04);
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.comp-header .comp-cell {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+}
+
+.comp-row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+    gap: 1px;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border-subtle);
+    transition: background 0.3s ease;
+}
+
+.comp-row:last-child {
+    border-bottom: none;
+}
+
+.comp-row:hover {
+    background: rgba(255,255,255,0.02);
+}
+
+.comp-row--danger {
+    background: rgba(248, 113, 113, 0.04);
+}
+
+.comp-row--danger:hover {
+    background: rgba(248, 113, 113, 0.08);
+}
+
+.comp-cell {
+    font-size: 14px;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+}
+
+.comp-name {
+    font-weight: 600;
+    color: var(--text-primary);
+    gap: 10px;
+}
+
+.comp-badge {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 100px;
+    flex-shrink: 0;
+}
+
+.comp-badge--green {
+    background: rgba(52, 211, 153, 0.15);
+    color: var(--accent-green);
+}
+
+.comp-badge--red {
+    background: rgba(248, 113, 113, 0.15);
+    color: var(--accent-red);
+}
+
+.comp-value {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.comp-value--green {
+    color: var(--accent-green);
+}
+
+.comp-value--red {
+    color: var(--accent-red);
+}
+
+.comp-desc {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.insight-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 24px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.insight-card:hover {
+    border-color: rgba(167, 139, 250, 0.3);
+    transform: translateY(-4px);
+    box-shadow: 0 0 30px rgba(167, 139, 250, 0.1);
+}
+
+.insight-multiplier {
+    font-size: 36px;
+    font-weight: 900;
+    background: linear-gradient(135deg, var(--accent-green), #6ee7b7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+
+.insight-icon-lg {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.insight-card p {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.proof-conclusion {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: rgba(52, 211, 153, 0.06);
+    border: 1px solid rgba(52, 211, 153, 0.2);
+    border-radius: var(--radius-md);
+    padding: 20px 24px;
+}
+
+.proof-conclusion-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(52, 211, 153, 0.2);
+    color: var(--accent-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.proof-conclusion p {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Responsive for comparison table */
+@media (max-width: 768px) {
+    .comp-header {
+        display: none;
+    }
+
+    .comp-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 16px;
+    }
+
+    .comp-cell {
+        font-size: 13px;
+    }
+
+    .comp-name {
+        font-size: 15px;
+        margin-bottom: 4px;
+    }
+
+    .comp-value {
+        font-size: 16px;
+    }
+
+    .comp-desc {
+        font-size: 12px;
+    }
+
+    .insights-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .insights-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.slide-9::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    right: -20%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(167, 139, 250, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* ===== SLIDE 10: Offer ===== */
 .offer-hero {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1560,7 +1800,7 @@ body {
     pointer-events: none;
 }
 
-.slide-9::before {
+.slide-10::before {
     content: '';
     position: absolute;
     top: -30%;
