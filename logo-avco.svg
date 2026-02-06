@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
+  <defs>
+    <linearGradient id="avGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8a8a8a"/>
+      <stop offset="100%" style="stop-color:#b0b0b0"/>
+    </linearGradient>
+  </defs>
+  <!-- A and V letters forming the icon -->
+  <g transform="translate(0, 5)">
+    <!-- A left stroke (dark gray) -->
+    <polygon points="22,55 32,10 40,10 30,55" fill="#7a7a7a"/>
+    <!-- A right stroke (lighter gray) -->
+    <polygon points="30,55 40,10 48,10 50,55" fill="#a0a0a0"/>
+    <!-- V stroke (light gray to cyan) -->
+    <polygon points="40,10 48,10 60,55 52,55" fill="#a0a0a0"/>
+    <!-- V right stroke (cyan) -->
+    <polygon points="48,10 70,10 60,55 52,55" fill="#00bcd4"/>
+    <!-- CO letters between A and V -->
+    <text x="35" y="46" font-family="Arial, sans-serif" font-weight="700" font-size="10" fill="#00bcd4" letter-spacing="1">co</text>
+  </g>
+  <!-- avco text -->
+  <text x="80" y="48" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="32" fill="#ffffff" letter-spacing="2">avco</text>
+</svg>

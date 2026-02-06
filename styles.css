@@ -86,6 +86,11 @@ body {
     width: auto;
 }
 
+.nav-logo-avco {
+    height: 22px;
+    width: auto;
+}
+
 .nav-x {
     color: var(--bs-orange);
     margin: 0 4px;
@@ -265,6 +270,26 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--bs-orange);
+}
+
+.bs-logo-header--small {
+    align-items: center;
+    gap: 10px;
+}
+
+.bs-logo-header--small .nav-x {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.bs-logo-sm {
+    height: 36px !important;
+    width: auto;
+}
+
+.avco-logo-sm {
+    height: 28px;
+    width: auto;
 }
 
 .slide-tag--bs {
