@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BESTAGE × AVCO — Анимационная серия для роста охвата</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-logo">BESTAGE <span class="nav-x">×</span> AVCO</div>
+        <div class="nav-dots" id="navDots"></div>
+        <div class="nav-counter"><span id="currentSlide">1</span> / 9</div>
+    </nav>
+
+    <!-- Progress bar -->
+    <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <!-- Slides Container -->
+    <main class="slides-container" id="slidesContainer">
+
+        <!-- SLIDE 1: Текущий охват -->
+        <section class="slide slide-1" id="slide1">
+            <div class="slide-inner">
+                <div class="slide-tag">Текущая ситуация</div>
+                <h1 class="slide-title animate-up">Мы везде, где есть<br><span class="highlight">наш клиент</span></h1>
+                <p class="slide-subtitle animate-up delay-1">Широкий спектр каналов коммуникации и качественный контентный базис</p>
+
+                <div class="channels-grid animate-up delay-2">
+                    <div class="channel-card">
+                        <div class="channel-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </div>
+                        <span class="channel-name">Instagram</span>
+                        <span class="channel-desc">Живой бэкстейдж</span>
+                    </div>
+                    <div class="channel-card">
+                        <div class="channel-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </div>
+                        <span class="channel-name">YouTube</span>
+                        <span class="channel-desc">Реальные кейсы</span>
+                    </div>
+                    <div class="channel-card">
+                        <div class="channel-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        </div>
+                        <span class="channel-name">Telegram</span>
+                        <span class="channel-desc">Канал компании</span>
+                    </div>
+                    <div class="channel-card">
+                        <div class="channel-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.391 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.27-1.422 2.18-3.61 2.18-3.61.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.49-.085.744-.576.744z"/></svg>
+                        </div>
+                        <span class="channel-name">VK</span>
+                        <span class="channel-desc">Сообщество</span>
+                    </div>
+                    <div class="channel-card">
+                        <div class="channel-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2zm0 3c-1.3 0-2.5.5-3.5 1.5S7 8.7 7 10c0 2 1 3.5 2.5 4.5L9 16.5c0 .3.2.5.5.5h5c.3 0 .5-.2.5-.5l-.5-2C16 14 17 12 17 10c0-1.3-.5-2.5-1.5-3.5S13.3 5 12 5z"/></svg>
+                        </div>
+                        <span class="channel-name">Я.Карты</span>
+                        <span class="channel-desc">Рейтинг 5.0</span>
+                    </div>
+                    <div class="channel-card">
+                        <div class="channel-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12c2.54 0 4.894-.79 6.834-2.135l-3.107-3.17a7.2 7.2 0 01-3.727 1.036c-3.975 0-7.2-3.225-7.2-7.2S8.025 3.33 12 3.33s7.2 3.225 7.2 7.2c0 1.39-.394 2.688-1.076 3.788l3.117 3.18C22.77 15.63 24 13.42 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                        </div>
+                        <span class="channel-name">Avito</span>
+                        <span class="channel-desc">100% отзывы</span>
+                    </div>
+                    <div class="channel-card">
+                        <div class="channel-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm1 16h-2v-6h2v6zm0-8h-2V6h2v2z"/></svg>
+                        </div>
+                        <span class="channel-name">Сайт</span>
+                        <span class="channel-desc">Портфолио</span>
+                    </div>
+                </div>
+
+                <div class="rating-badge animate-up delay-3">
+                    <div class="rating-stars">★★★★★</div>
+                    <div class="rating-text">5.0 на Яндекс.Картах • 100% положительных отзывов</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 2: Проблема -->
+        <section class="slide slide-2" id="slide2">
+            <div class="slide-inner">
+                <div class="slide-tag slide-tag--warning">Проблема</div>
+                <h1 class="slide-title animate-up">«Красивая витрина»<br><span class="highlight-red">vs Реальные цифры</span></h1>
+                <p class="slide-subtitle animate-up delay-1">Контент не достигает целевой аудитории в нужном масштабе</p>
+
+                <div class="chart-container animate-up delay-2">
+                    <div class="chart-bars">
+                        <div class="chart-group">
+                            <div class="chart-label">Количество контента</div>
+                            <div class="bar-track">
+                                <div class="bar-fill bar-high" data-width="85">
+                                    <span class="bar-value">Высокое</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-group">
+                            <div class="chart-label">Рост аудитории</div>
+                            <div class="bar-track">
+                                <div class="bar-fill bar-low" data-width="12">
+                                    <span class="bar-value">Плато</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-gap-arrow">
+                        <span>РАЗРЫВ</span>
+                    </div>
+                </div>
+
+                <div class="stats-row animate-up delay-3">
+                    <div class="stat-card stat-card--negative">
+                        <div class="stat-icon">▶</div>
+                        <div class="stat-label">YouTube</div>
+                        <div class="stat-value">Единицы</div>
+                        <div class="stat-desc">новых подписчиков за год</div>
+                    </div>
+                    <div class="stat-card stat-card--negative">
+                        <div class="stat-icon">✈</div>
+                        <div class="stat-label">Telegram</div>
+                        <div class="stat-value">~100</div>
+                        <div class="stat-desc">подписчиков</div>
+                    </div>
+                    <div class="stat-card stat-card--negative">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-label">VK</div>
+                        <div class="stat-value">~100</div>
+                        <div class="stat-desc">подписчиков</div>
+                    </div>
+                </div>
+
+                <div class="conclusion-box animate-up delay-4">
+                    <div class="conclusion-icon">⚠</div>
+                    <p>Контент публикуется, но <strong>не работает как маркетинговая система</strong>. Отсутствуют выстроенные воронки и системное продвижение.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 3: Почему не попадает -->
+        <section class="slide slide-3" id="slide3">
+            <div class="slide-inner">
+                <div class="slide-tag slide-tag--warning">Анализ</div>
+                <h1 class="slide-title animate-up">Почему контент<br><span class="highlight-red">«не попадает» в ЦА?</span></h1>
+                <p class="slide-subtitle animate-up delay-1">Соцсети превращаются в архив, а не в инструмент продаж</p>
+
+                <div class="blindspot-diagram animate-up delay-2">
+                    <div class="blindspot-center">
+                        <div class="blindspot-content-label">КОНТЕНТ</div>
+                    </div>
+                    <div class="blindspot-targets">
+                        <div class="blindspot-target blindspot-miss">
+                            <span class="target-label">Агентства</span>
+                            <span class="target-status">Мимо</span>
+                        </div>
+                        <div class="blindspot-target blindspot-miss">
+                            <span class="target-label">Корпораты</span>
+                            <span class="target-status">Мимо</span>
+                        </div>
+                        <div class="blindspot-target blindspot-miss">
+                            <span class="target-label">Артисты</span>
+                            <span class="target-status">Мимо</span>
+                        </div>
+                    </div>
+                    <div class="blindspot-arrows">
+                        <div class="arrow-miss"></div>
+                        <div class="arrow-miss"></div>
+                        <div class="arrow-miss"></div>
+                    </div>
+                </div>
+
+                <div class="problems-list animate-up delay-3">
+                    <div class="problem-item">
+                        <div class="problem-number">01</div>
+                        <div class="problem-content">
+                            <h3>Слабая рубрикация</h3>
+                            <p>Контент не разделён под нужды разных сегментов: агентства, корпораты, артисты</p>
+                        </div>
+                    </div>
+                    <div class="problem-item">
+                        <div class="problem-number">02</div>
+                        <div class="problem-content">
+                            <h3>Отсутствие CTA</h3>
+                            <p>Зритель посмотрел ролик, но не понимает, что делать дальше</p>
+                        </div>
+                    </div>
+                    <div class="problem-item">
+                        <div class="problem-number">03</div>
+                        <div class="problem-content">
+                            <h3>Контент ради контента</h3>
+                            <p>Создаём контент ради контента, а не для прогрева и лидогенерации</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 4: Сегменты ЦА -->
+        <section class="slide slide-4" id="slide4">
+            <div class="slide-inner">
+                <div class="slide-tag slide-tag--blue">Целевая аудитория</div>
+                <h1 class="slide-title animate-up">Приоритетные сегменты<br><span class="highlight">целевой аудитории</span></h1>
+                <p class="slide-subtitle animate-up delay-1">Три ключевых B2B-сегмента с уникальными потребностями</p>
+
+                <div class="segments-grid animate-up delay-2">
+                    <div class="segment-card segment-priority-1">
+                        <div class="segment-priority">1 приоритет</div>
+                        <div class="segment-icon-wrap">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="10" width="36" height="28" rx="3"/><path d="M6 18h36"/><circle cx="24" cy="30" r="4"/><path d="M16 14V8a8 8 0 0116 0v6"/></svg>
+                        </div>
+                        <h3>Корпоративные event-менеджеры</h3>
+                        <p class="segment-roles">HR, PR, Marketing, Internal Comms</p>
+                        <ul class="segment-traits">
+                            <li>Не технические специалисты</li>
+                            <li>Персональная ответственность за результат</li>
+                            <li>Регулярные мероприятия</li>
+                            <li>Высокая ценность спокойствия</li>
+                        </ul>
+                    </div>
+
+                    <div class="segment-card segment-priority-2">
+                        <div class="segment-priority">2 приоритет</div>
+                        <div class="segment-icon-wrap">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="18"/><path d="M24 6v36M6 24h36"/><path d="M10 10l28 28M38 10L10 38"/></svg>
+                        </div>
+                        <h3>MICE-компании</h3>
+                        <p class="segment-roles">Международные стандарты</p>
+                        <ul class="segment-traits">
+                            <li>Высокие бюджеты</li>
+                            <li>Жёсткие требования к процессам</li>
+                            <li>Высокая цена ошибки</li>
+                            <li>Международные стандарты</li>
+                        </ul>
+                    </div>
+
+                    <div class="segment-card segment-priority-3">
+                        <div class="segment-priority">3 приоритет</div>
+                        <div class="segment-icon-wrap">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M24 4l6 12 13 2-9.5 9 2.5 13L24 34l-12 6 2.5-13L5 18l13-2z"/></svg>
+                        </div>
+                        <h3>Event- и свадебные агентства</h3>
+                        <p class="segment-roles">Регулярные проекты</p>
+                        <ul class="segment-traits">
+                            <li>Высокая зависимость от репутации</li>
+                            <li>Страх подставы перед клиентом</li>
+                            <li>Повышенный запрос на надёжность</li>
+                            <li>Регулярные проекты</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 5: Боли и ценности -->
+        <section class="slide slide-5" id="slide5">
+            <div class="slide-inner">
+                <div class="slide-tag slide-tag--red">Инсайты</div>
+                <h1 class="slide-title animate-up">Ключевые боли<br><span class="highlight-red">и ценности ЦА</span></h1>
+
+                <div class="insight-quote animate-up delay-1">
+                    <span class="quote-mark">"</span>
+                    Мне нужно, чтобы было красиво и всё хорошо работало, но я ничего не понимаю в техническом продакшене
+                    <span class="quote-mark">"</span>
+                </div>
+
+                <div class="pains-grid animate-up delay-2">
+                    <div class="pain-block pain-fears">
+                        <h3>Ключевые страхи</h3>
+                        <ul>
+                            <li>Насчитают лишнего</li>
+                            <li>Что-то не успеют / сломается</li>
+                            <li>Не закажут что-то важное</li>
+                        </ul>
+                    </div>
+                    <div class="pain-block pain-deep">
+                        <h3>Глубинные боли</h3>
+                        <ul>
+                            <li>Страх выглядеть непрофессионалом</li>
+                            <li>Страх быть крайним</li>
+                            <li>Страх публичного провала</li>
+                            <li>Страх скрытых ошибок</li>
+                            <li>Страх исчезающего подрядчика</li>
+                        </ul>
+                    </div>
+                    <div class="pain-block pain-values">
+                        <h3>Ключевые ценности</h3>
+                        <ul>
+                            <li>Спокойствие</li>
+                            <li>Прозрачность</li>
+                            <li>Ответственность под ключ</li>
+                            <li>Проактивность</li>
+                            <li>Адекватная коммуникация</li>
+                        </ul>
+                    </div>
+                    <div class="pain-block pain-buy">
+                        <h3>Что реально покупают</h3>
+                        <div class="buy-highlight">
+                            <p>Защиту от репутационного провала и снятие личной ответственности за техническую часть мероприятия</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-note animate-up delay-3">
+                    <span class="note-icon">💡</span> Цена и «самое новое оборудование» <strong>не являются</strong> ключевыми ценностями
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 6: Решение -->
+        <section class="slide slide-6" id="slide6">
+            <div class="slide-inner">
+                <div class="slide-tag slide-tag--green">Решение</div>
+                <h1 class="slide-title animate-up">Анимационная серия<br><span class="highlight-green">«Диалоги про техпродакшен без боли»</span></h1>
+                <p class="slide-subtitle animate-up delay-1">Новый формат коммуникации через понимание рисков заказчика</p>
+
+                <div class="solution-layout animate-up delay-2">
+                    <div class="characters-showcase">
+                        <div class="character character-client">
+                            <div class="character-avatar">
+                                <svg viewBox="0 0 80 80" fill="none">
+                                    <circle cx="40" cy="30" r="16" fill="#E8D5F5"/>
+                                    <path d="M20 70c0-11 9-20 20-20s20 9 20 20" fill="#E8D5F5"/>
+                                    <circle cx="40" cy="30" r="12" fill="#D4B8E8"/>
+                                    <circle cx="35" cy="28" r="2" fill="#333"/>
+                                    <circle cx="45" cy="28" r="2" fill="#333"/>
+                                    <path d="M36 34q4 4 8 0" stroke="#333" stroke-width="1.5" fill="none"/>
+                                    <path d="M28 20c2-6 8-10 12-10s10 4 12 10" fill="#8B6914"/>
+                                </svg>
+                            </div>
+                            <div class="character-info">
+                                <span class="character-name">Event-менеджер</span>
+                                <span class="character-desc">Со стороны клиента</span>
+                            </div>
+                        </div>
+                        <div class="dialog-symbol">
+                            <svg viewBox="0 0 40 40" fill="none"><path d="M8 20h24M20 8v24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+                        </div>
+                        <div class="character character-bestage">
+                            <div class="character-avatar">
+                                <svg viewBox="0 0 80 80" fill="none">
+                                    <circle cx="40" cy="30" r="16" fill="#D5E8F5"/>
+                                    <path d="M20 70c0-11 9-20 20-20s20 9 20 20" fill="#D5E8F5"/>
+                                    <circle cx="40" cy="30" r="12" fill="#B8D4E8"/>
+                                    <circle cx="35" cy="28" r="2" fill="#333"/>
+                                    <circle cx="45" cy="28" r="2" fill="#333"/>
+                                    <path d="M36 34q4 4 8 0" stroke="#333" stroke-width="1.5" fill="none"/>
+                                    <path d="M28 18c2-4 6-8 12-8s10 4 12 8" fill="#2D3748"/>
+                                </svg>
+                            </div>
+                            <div class="character-info">
+                                <span class="character-name">Специалист BESTAGE</span>
+                                <span class="character-desc">Технический партнёр</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="solution-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">🎬</div>
+                            <div>
+                                <strong>Формат:</strong> Короткие вертикальные анимационные ролики
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">💬</div>
+                            <div>
+                                <strong>Суть:</strong> Живой диалог по конкретной рабочей ситуации
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🎯</div>
+                            <div>
+                                <strong>В центре:</strong> Реальная ситуация с ответственностью, а не оборудование
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="important-note animate-up delay-3">
+                    <strong>Важно:</strong> Героиня не выглядит некомпетентной. Она хорошо понимает задачу мероприятия, но не обязана знать технические решения.
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 7: О чём ролики -->
+        <section class="slide slide-7" id="slide7">
+            <div class="slide-inner">
+                <div class="slide-tag slide-tag--green">Механика</div>
+                <h1 class="slide-title animate-up">О чём ролики<br><span class="highlight-green">и как это работает</span></h1>
+                <p class="slide-subtitle animate-up delay-1">Узнаваемые проблемы из практики и демонстрация партнёрского подхода</p>
+
+                <div class="topics-carousel animate-up delay-2">
+                    <div class="topic-card">
+                        <div class="topic-emoji">🔧</div>
+                        <p>Монтаж не успевают закончить вовремя</p>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-emoji">🔊</div>
+                        <p>В зале появляется гул или фон</p>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-emoji">🎤</div>
+                        <p>Микрофон перестаёт работать во время выступления</p>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-emoji">📐</div>
+                        <p>На площадке внезапно меняют схему зала</p>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-emoji">🎵</div>
+                        <p>Артисту срочно нужен дополнительный монитор</p>
+                    </div>
+                </div>
+
+                <div class="dialog-structure animate-up delay-3">
+                    <div class="dialog-side dialog-client-side">
+                        <h3>Event-менеджер формулирует:</h3>
+                        <ul>
+                            <li>Задачу и сомнение</li>
+                            <li>Что может пойти не так</li>
+                            <li>Почему ситуация критична</li>
+                        </ul>
+                    </div>
+                    <div class="dialog-arrow-center">
+                        <div class="arrow-circle">→</div>
+                    </div>
+                    <div class="dialog-side dialog-bestage-side">
+                        <h3>Специалист BESTAGE объясняет:</h3>
+                        <ul>
+                            <li>Что именно происходит</li>
+                            <li>Какие риски существуют</li>
+                            <li>Какие решения применяются</li>
+                            <li>Когда подрядчик берёт ответственность</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="result-box animate-up delay-4">
+                    <strong>Результат:</strong> Демонстрация понимания ответственности event-менеджера и готовности BESTAGE быть партнёром, а не просто техническим исполнителем
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 8: Зачем и где -->
+        <section class="slide slide-8" id="slide8">
+            <div class="slide-inner">
+                <div class="slide-tag slide-tag--blue">Стратегия</div>
+                <h1 class="slide-title animate-up">Зачем это нужно<br><span class="highlight">и где публикуется</span></h1>
+
+                <div class="strategy-grid animate-up delay-1">
+                    <div class="strategy-left">
+                        <h3>Что транслирует серия:</h3>
+                        <div class="broadcast-list">
+                            <div class="broadcast-item">
+                                <span class="broadcast-check">✓</span>
+                                <span>Как event-менеджеру сохранять спокойствие</span>
+                            </div>
+                            <div class="broadcast-item">
+                                <span class="broadcast-check">✓</span>
+                                <span>Как выстраивается прозрачное взаимодействие</span>
+                            </div>
+                            <div class="broadcast-item">
+                                <span class="broadcast-check">✓</span>
+                                <span>Как заранее выявляются и закрываются риски</span>
+                            </div>
+                            <div class="broadcast-item">
+                                <span class="broadcast-check">✓</span>
+                                <span>Как выглядит проактивная работа команды</span>
+                            </div>
+                            <div class="broadcast-item">
+                                <span class="broadcast-check">✓</span>
+                                <span>Как строится адекватная коммуникация</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="strategy-right">
+                        <div class="why-box">
+                            <h3>Почему это важно</h3>
+                            <div class="transform-visual">
+                                <div class="transform-from">
+                                    <span class="transform-label">Сегодня</span>
+                                    <p>Проекты, масштаб, оборудование, команда</p>
+                                </div>
+                                <div class="transform-arrow">
+                                    <svg viewBox="0 0 40 40" fill="none"><path d="M8 20h24m-8-8l8 8-8 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                <div class="transform-to">
+                                    <span class="transform-label">Серия добавляет</span>
+                                    <p>Работа с рисками заказчика и его ответственностью</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="channels-publish">
+                            <h3>Каналы публикации</h3>
+                            <div class="pub-channels">
+                                <div class="pub-channel">
+                                    <span class="pub-icon">📱</span>
+                                    <span>Instagram Reels</span>
+                                </div>
+                                <div class="pub-channel">
+                                    <span class="pub-icon">▶</span>
+                                    <span>YouTube Shorts</span>
+                                </div>
+                                <div class="pub-channel">
+                                    <span class="pub-icon">📹</span>
+                                    <span>VK Video</span>
+                                </div>
+                                <div class="pub-channel">
+                                    <span class="pub-icon">✈</span>
+                                    <span>Telegram</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="transformation-banner animate-up delay-2">
+                    <span class="banner-from">От экспертизы</span>
+                    <span class="banner-arrow">→</span>
+                    <span class="banner-to">К партнёрству</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 9: Коммерческое предложение -->
+        <section class="slide slide-9" id="slide9">
+            <div class="slide-inner">
+                <div class="slide-tag slide-tag--gold">Коммерческое предложение</div>
+                <h1 class="slide-title animate-up">Готовое решение<br><span class="highlight-gold">«под ключ» от AVCO</span></h1>
+
+                <div class="offer-hero animate-up delay-1">
+                    <div class="offer-company">
+                        <div class="avco-logo">AVCO</div>
+                        <div class="avco-name">Communications</div>
+                        <a href="https://taplink.cc/avco_communications" class="avco-link" target="_blank" rel="noopener">taplink.cc/avco_communications</a>
+                    </div>
+                    <div class="offer-price">
+                        <div class="price-main">75 000 ₽</div>
+                        <div class="price-period">/ месяц</div>
+                        <div class="price-billing">Оплата: раз в 2 месяца (150 000 ₽)</div>
+                    </div>
+                    <div class="offer-volume">
+                        <div class="volume-number">16</div>
+                        <div class="volume-desc">роликов в месяц</div>
+                        <div class="volume-detail">4 ролика в неделю</div>
+                    </div>
+                </div>
+
+                <div class="stages-timeline animate-up delay-2">
+                    <h3 class="stages-title">Порядок работы</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-number">1</div>
+                            <div class="timeline-content">
+                                <h4>Разработка визуального стиля</h4>
+                                <p>Создаём и согласовываем персонажей и визуальную стилистику серии</p>
+                            </div>
+                        </div>
+                        <div class="timeline-connector"></div>
+                        <div class="timeline-item">
+                            <div class="timeline-number">2</div>
+                            <div class="timeline-content">
+                                <h4>Контент-план</h4>
+                                <p>Собираем и утверждаем темы роликов на 2 месяца вперёд</p>
+                            </div>
+                        </div>
+                        <div class="timeline-connector"></div>
+                        <div class="timeline-item">
+                            <div class="timeline-number">3</div>
+                            <div class="timeline-content">
+                                <h4>Производство и передача</h4>
+                                <p>Передаём готовые ролики пакетами на 2 недели вперёд</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="deliverables animate-up delay-3">
+                    <h3>Что получает BESTAGE:</h3>
+                    <div class="deliverables-grid">
+                        <div class="deliverable-item">
+                            <span class="del-icon">📦</span>
+                            <span>Готовый контент для всех каналов</span>
+                        </div>
+                        <div class="deliverable-item">
+                            <span class="del-icon">📅</span>
+                            <span>Регулярность без нагрузки на команду</span>
+                        </div>
+                        <div class="deliverable-item">
+                            <span class="del-icon">🎨</span>
+                            <span>Профессиональная анимация</span>
+                        </div>
+                        <div class="deliverable-item">
+                            <span class="del-icon">📋</span>
+                            <span>Системный контент-план</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-section animate-up delay-4">
+                    <a href="https://taplink.cc/avco_communications" class="cta-button" target="_blank" rel="noopener">
+                        Обсудить запуск серии
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint" id="scrollHint">
+        <span>Листайте вниз</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14m-7-7l7 7 7-7"/></svg>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
